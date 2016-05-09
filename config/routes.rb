@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'pages#main'
   get 'teas' => "teas#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
