@@ -1,0 +1,10 @@
+<h1>All Teas</h1>
+<% @teas.each do |tea| %>
+  <p><%= tea.name %><p>
+  <p><%= tea.serving %><p>
+  <p><%= tea.category %><p>
+  <p><%= tea.origin %><p>
+  <p><%= tea.caffeine %><p>
+  <p><%= tea.description %><p>
+  <img src=<%= tea.image %>>
+<% end %>
