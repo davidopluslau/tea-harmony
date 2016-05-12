@@ -14,15 +14,15 @@
 ActiveRecord::Schema.define(version: 20160509004624) do
 
   create_table "teas", force: :cascade do |t|
-    t.string   "name"
-    t.text     "serving"
-    t.string   "category"
-    t.string   "origin"
-    t.string   "caffeine"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "image"
+    t.string   "name",        limit: 255
+    t.text     "serving",     limit: 65535
+    t.string   "category",    limit: 255
+    t.string   "origin",      limit: 255
+    t.string   "caffeine",    limit: 255
+    t.text     "description", limit: 65535
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.string   "image",       limit: 255
   end
 
 end
