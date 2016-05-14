@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#main'
   get 'teas' => "teas#index"
+  get 'teas/:id' => "teas#show", as: :tea
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
