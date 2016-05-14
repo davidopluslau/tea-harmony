@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'pages#main'
   get 'teas' => "teas#index"
+  get 'teas/lookup' => "teas#lookup"
+  get 'teas/missing' => "teas#missing"
   get 'teas/:id' => "teas#show", as: :tea
 
   # The priority is based upon order of creation: first created -> highest priority.

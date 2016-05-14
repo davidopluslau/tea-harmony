@@ -1,7 +1,7 @@
 <p>Tea Harmony<p>
 <p><%= link_to "Teas", teas_path %></p>
-<%= form_tag("teas/:id", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
+<%= form_tag(teas_lookup_path, method: "get") do %>
+  <%= label_tag(:lookup, "Search for:") %>
+  <%= text_field_tag(:lookup) %>
   <%= submit_tag("Search") %>
 <% end %>

@@ -1,0 +1,11 @@
+<% if @tea.present? %>
+  <h1><%= @tea.name %></h1>
+  <p><%= @tea.serving %><p>
+  <p><%= @tea.category %><p>
+  <p><%= @tea.origin %><p>
+  <p><%= @tea.caffeine %><p>
+  <p><%= @tea.description %><p>
+  <img src=<%= @tea.image %>>
+<% else %>
+  <p>Tea with this name is unavailable<p>
+<%end%>
